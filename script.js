@@ -37,3 +37,9 @@ let pet = {
         alert("Your pet is " + this.age + " years old");
     }
 };
+alert("Welcome! Your pet is a " + pet.type + " named " + pet.name + ".");
+    
+pet.feed();
+pet.play();
+pet.agePet();
+
