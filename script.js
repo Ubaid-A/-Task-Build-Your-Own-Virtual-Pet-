@@ -43,3 +43,20 @@ pet.feed();
 pet.play();
 pet.agePet();
 
+let userChoice;
+do {
+    userChoice = prompt("Enter a number:\n1: View Pet's Name\n2: View Pet's Type\n3: View Pet's Age\n4: Quit");
+
+    if (userChoice === "1") {
+        pet.showName();
+    } else if (userChoice === "2") {
+        pet.showType();
+    } else if (userChoice === "3") {
+        pet.showAge();
+    } else if (userChoice === "4") {
+        alert("Goodbye!");
+    } else {
+        alert("Invalid choice! Please enter a number between 1 to 4.");
+    }
+
+} while (userChoice !== "4");
